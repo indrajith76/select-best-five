@@ -1,3 +1,4 @@
+// code for get input field value by id
 function getInputFieldValueById(id){
     let inputField = document.getElementById(id);
     let inputFieldString = inputField.value;
@@ -5,7 +6,7 @@ function getInputFieldValueById(id){
     inputField.value = '';
     return inputFieldValue;
 }
-
+// code for get element value by id
 function getElementValueById(id){
     let element = document.getElementById(id);
     let elementString = element.innerText;
@@ -45,7 +46,7 @@ for (const btn of playerBtn) {
 }
 
 
-// code for calculate expense
+// code for calculate per player expense
 document.getElementById('calculate-btn').addEventListener('click',function(){
     const perPlayerExpense = getInputFieldValueById('player-expense-field');
     if(isNaN(perPlayerExpense) || perPlayerExpense <= 0) {
@@ -56,6 +57,7 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
     setElementValue('player-expence-display',playerExpense);
 })
 
+// code for calculate total expense
 document.getElementById('calculate-total').addEventListener('click', function(){
     const allPlayerExpense = getElementValueById('player-expence-display');
     const managerExpense = getInputFieldValueById('manager-field');
