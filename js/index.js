@@ -3,7 +3,7 @@ function getInputFieldValueById(id){
     let inputField = document.getElementById(id);
     let inputFieldString = inputField.value;
     let inputFieldValue = parseFloat(inputFieldString);
-    inputField.value = '';
+    // inputField.value = '';
     return inputFieldValue;
 }
 // code for get element value by id
