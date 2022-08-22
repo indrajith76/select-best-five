@@ -12,5 +12,9 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+.info-and-calculation div:first-child{
+    min-height: 380px;
+}
+
 /* font-family: 'Berkshire Swash', cursive;
 font-family: 'Roboto', sans-serif; */
